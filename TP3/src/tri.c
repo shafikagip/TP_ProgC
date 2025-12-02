@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main() {
+    int tab[100];
+    srand(time(NULL));
+
+    for(int i = 0; i < 200; i++)
+        tab[i] = rand() % 2001 - 1000;
+
+    printf("Tableau non trié :\n");
+    for(int i = 0; i < 200; i++)
+        printf("%d ", tab[i]);
+    printf("\n");
+
+    for(int i = 0; i < 100; i++) {
+        for(int j = 0; j < 99 - i; j++) {
+            if(tab[j] > tab[j+1]) {
+                int temp = tab[j];
+                tab[j] = tab[j+1];
+                tab[j+1] = temp;
+            }
+        }
+    }
+
+    printf("Tableau trié par ordre croissant :\n");
+    for(int i = 0; i < 100; i++)
+        printf("%d ", tab[i]);
+    printf("\n");
+
+    return 0;
+}
