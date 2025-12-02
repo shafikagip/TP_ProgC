@@ -14,7 +14,7 @@ int main() {
         printf("%d ", tab[i]);
     printf("\n");
 
-    for(int i = 0; i < 100; i++) {
+    for(int i = 0; i < 200; i++) {
         for(int j = 0; j < 99 - i; j++) {
             if(tab[j] > tab[j+1]) {
                 int temp = tab[j];
@@ -25,9 +25,10 @@ int main() {
     }
 
     printf("Tableau trié par ordre croissant :\n");
-    for(int i = 0; i < 100; i++)
+    for(int i = 0; i < 200; i++)
         printf("%d ", tab[i]);
     printf("\n");
 
     return 0;
 }
+
