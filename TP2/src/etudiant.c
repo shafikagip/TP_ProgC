@@ -4,11 +4,11 @@ int main() {
     char noms[5][20] = {"Dupont", "Martin", "Durand", "Petit", "Moreau"};
     char prenoms[5][20] = {"Marie", "Pierre", "Luc", "Sophie", "Claire"};
     char adresses[5][50] = {
-        "20, Boulevard Niels Bohr",
-        "22, Boulevard Niels Bohr",
+        "20, Boulevard vitor",
+        "22, Boulevard papi",
         "10, Rue de Lyon",
         "5, Avenue Paris",
-        "15, Rue Marseille"
+        "15, Rue lyon"
     };
     float notes_prog[5] = {16.5, 14.0, 12.0, 18.0, 15.0};
     float notes_sys[5] = {12.1, 14.1, 13.5, 17.0, 16.0};
@@ -19,3 +19,4 @@ int main() {
     }
     return 0;
 }
+
